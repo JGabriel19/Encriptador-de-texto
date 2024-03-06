@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="icon" type="img/png" href="img/padlock-check.png" />
+    <!-- link bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <title>Encriptador</title>
+  </head>
+  <body>
+    <main class="container-main">
+      <img class="img-logo" src="img/logo.png" alt="logo de alura" />
+      <section class="container-input">
+        <textarea
+          class="txt-input"
+          placeholder="Ingrese el texto aqui"
+        ></textarea>
+        <p>
+          <i class="bi bi-exclamation-circle-fill"></i>Solo letras minúsculas y
+          sin acentos.
+        </p>
+        <div class="container-btn">
+          <button class="btn-encrypt">Encriptar</button>
+          <button class="btn-decrypt" disabled>Desencriptar</button>
+        </div>
+      </section>
+
+      <section class="container-output">
+        <div class="hidden" id="container-txt-output">
+          <textarea class="txt-output" id="output" disabled></textarea>
+          <button class="btn-copy">Copiar</button>
+        </div>
+        <div class="container-find">
+          <img
+            class="img-people"
+            src="img/muñeco.png"
+            alt="imagen de una persona"
+          />
+          <h2 class="title">Ningún mensaje fue encontrado</h2>
+          <p class="paragraph">
+            Ingrese el texto que desees encriptar o desencriptar.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container-logo">
+        <a
+          href="https://www.linkedin.com/in/jose-gabriel-quispe-anyaipoma-270959229/"
+          target="_blank"
+          ><i class="bi bi-linkedin"></i
+        ></a>
+        <a href="https://github.com/JGabriel19" target="_blank"
+          ><i class="bi bi-github"></i
+        ></a>
+      </div>
+      <p>&copy 2024 creado por Gabriel</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
