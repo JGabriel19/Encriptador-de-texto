@@ -189,7 +189,6 @@ footer p {
   }
   .img-logo {
     margin-left: -40px;
-    height: 32px;
   }
   .txt-input {
     margin-top: 2.5rem;
@@ -204,19 +203,28 @@ footer p {
 
 @media only screen and (max-width: 450px) {
   body {
-    padding: 20px;
+    padding: 20px 20px 8px 20px;
   }
 
   .container-main {
-    grid-template-columns: 1fr;
-    gap: 2rem;
+    grid-template-rows: auto 1.3fr 1fr;
+    gap: 1rem;
+  }
+  .img-logo {
+    margin-left: -30px;
+    height: 32px;
   }
 
+  .container-input {
+    height: 100%;
+  }
   .txt-input {
     margin-top: 0;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
-
+  .container-input p {
+    font-size: 14px;
+  }
   .btn-encrypt,
   .btn-decrypt,
   .btn-copy {
@@ -226,5 +234,13 @@ footer p {
   .container-btn {
     flex-direction: column;
     gap: 1rem;
+    padding-bottom: 0;
+  }
+  .container-output {
+    padding: 20px;
+  }
+  .txt-output {
+    height: 75%;
+    font-size: 1.2rem;
   }
 }
