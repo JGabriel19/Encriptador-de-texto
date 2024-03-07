@@ -54,8 +54,6 @@ encrypt.addEventListener("click", () => {
   if (textInput.value !== "") {
     imgFind.classList.add("hidden");
     containerOutPut.classList.remove("hidden");
-    decrypt.removeAttribute("disabled");
-    decrypt.style.backgroundColor = "rgb(255, 255, 255)";
   }
 });
 
@@ -88,6 +86,10 @@ function desencriptar() {
 
 decrypt.addEventListener("click", () => {
   textOutput.innerText = desencriptar();
+  if (textInput.value !== "") {
+    imgFind.classList.add("hidden");
+    containerOutPut.classList.remove("hidden");
+  }
 });
 
 btnCopy.addEventListener("click", function () {
